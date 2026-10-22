@@ -1,0 +1,21 @@
+body {
+  min-height: 100dvh;
+  font-family: var(--font-family-base);
+  color: var(--color-neutral-0);
+  background-color: var(--color-neutral-900);
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.page-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
