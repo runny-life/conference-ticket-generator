@@ -36,6 +36,10 @@ select {
   font-family: inherit;
 }
 
+fieldset {
+  border: none;
+}
+
 p,
 h1,
 h2,

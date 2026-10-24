@@ -25,6 +25,9 @@
   --spacing-800: 4rem;
   --spacing-1000: 5rem;
 
+  /* Fonts */
+  --font-family-base: 'Inconsolata', sans-serif;
+
   /* Radius */
   --radius-4: 4px;
   --radius-6: 6px;
