@@ -219,6 +219,19 @@ body {
   background: rgba(255, 255, 255, 0.08);
   border: 1px dashed var(--color-neutral-500);
   border-radius: 12px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    @media (hover: hover) {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-neutral-0);
+    outline-offset: 4px;
+  }
 }
 
 .dropzone__empty {
@@ -282,12 +295,24 @@ body {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--color-neutral-500);
   border-radius: 12px;
+  transition: background 0.2s ease;
 
   &::placeholder {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.2;
     color: var(--color-neutral-300);
+  }
+
+  &:hover {
+    @media (hover: hover) {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-neutral-0);
+    outline-offset: 4px;
   }
 }
 
@@ -302,8 +327,24 @@ body {
   color: var(--color-neutral-900);
   border: none;
   border-radius: 12px;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .btn--primary {
   background-color: var(--color-orange-500);
+
+  &:hover {
+    @media (hover: hover) {
+      box-shadow: 0 4px 0 0 var(--color-orange-500);
+      background-color: var(--color-orange-700);
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-neutral-0);
+    outline-offset: 4px;
+  }
 }

@@ -65,7 +65,12 @@
           <form class="form" id="ticket-form" novalidate>
             <fieldset class="field field--avatar">
               <legend class="field__legend">Upload Avatar</legend>
-              <label class="dropzone" id="dropzone" aria-describedby="avatar-hint avatar-error">
+              <label
+                class="dropzone"
+                id="dropzone"
+                aria-describedby="avatar-hint avatar-error"
+                tabindex="0"
+              >
                 <input
                   class="dropzone__input sr-only"
                   type="file"
@@ -73,6 +78,7 @@
                   id="avatar"
                   accept="image/png, image/jpeg"
                   aria-describedby="avatar-hint avatar-error"
+                  tabindex="-1"
                 />
                 <div class="dropzone__empty" id="dropzone-empty">
                   <span class="dropzone__icon" aria-hidden="true">
